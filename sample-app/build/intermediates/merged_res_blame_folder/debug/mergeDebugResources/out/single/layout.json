@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "com.playguardian.sample.sample-app-mergeDebugResources-33:/layout/activity_main.xml",
+        "source": "com.playguardian.sample.sample-app-main-36:/layout/activity_main.xml"
+    }
+]

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_surface">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/brand_primary"
+        android:elevation="4dp"
+        app:title="PlayGuardian"
+        app:subtitle="Special Access Manager"
+        app:titleTextColor="@color/white"
+        app:subtitleTextColor="#CCFFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- STATUS CARDS -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CURRENT STATUS"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:letterSpacing="0.12"
+                android:paddingStart="4dp"
+                android:paddingBottom="6dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/white">
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🔋" android:textSize="22sp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:text="Battery Opt." android:textSize="12sp"
+                            android:textColor="@color/text_primary" android:textStyle="bold" android:paddingTop="4dp" />
+                        <TextView android:id="@+id/tvBatteryStatus" android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:text="Checking…"
+                            android:textSize="11sp" android:textColor="@color/text_secondary" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/white">
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🪟" android:textSize="22sp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:text="Overlay" android:textSize="12sp"
+                            android:textColor="@color/text_primary" android:textStyle="bold" android:paddingTop="4dp" />
+                        <TextView android:id="@+id/tvOverlayStatus" android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:text="Checking…"
+                            android:textSize="11sp" android:textColor="@color/text_secondary" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/white">
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="⏰" android:textSize="22sp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:text="Exact Alarm" android:textSize="12sp"
+                            android:textColor="@color/text_primary" android:textStyle="bold" android:paddingTop="4dp" />
+                        <TextView android:id="@+id/tvAlarmStatus" android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:text="Checking…"
+                            android:textSize="11sp" android:textColor="@color/text_secondary" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="@color/white">
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🔔" android:textSize="22sp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:text="Notif. Listener" android:textSize="12sp"
+                            android:textColor="@color/text_primary" android:textStyle="bold" android:paddingTop="4dp" />
+                        <TextView android:id="@+id/tvNotifStatus" android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:text="Checking…"
+                            android:textSize="11sp" android:textColor="@color/text_secondary" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- POLICY AUDIT SECTION -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POLICY AUDIT"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:letterSpacing="0.12"
+                android:paddingStart="4dp"
+                android:paddingBottom="6dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="4dp">
+
+                    <Button android:id="@+id/btnAuditBattery"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="  Audit Battery Optimization Policy"
+                        android:textColor="@color/brand_primary" android:gravity="start|center_vertical" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginHorizontal="16dp"/>
+
+                    <Button android:id="@+id/btnAuditOverlay"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="  Audit Overlay Permission Policy"
+                        android:textColor="@color/brand_primary" android:gravity="start|center_vertical" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginHorizontal="16dp"/>
+
+                    <Button android:id="@+id/btnAuditAlarm"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="  Audit Exact Alarm Policy"
+                        android:textColor="@color/brand_primary" android:gravity="start|center_vertical" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginHorizontal="16dp"/>
+
+                    <Button android:id="@+id/btnAuditNotif"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="  Audit Notification Listener Policy"
+                        android:textColor="@color/brand_primary" android:gravity="start|center_vertical" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginHorizontal="16dp"/>
+
+                    <Button android:id="@+id/btnManifestAudit"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="  Scan Manifest for Sensitive Permissions"
+                        android:textColor="@color/status_warning" android:gravity="start|center_vertical" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- REQUEST ACCESS SECTION -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REQUEST ACCESS"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:letterSpacing="0.12"
+                android:paddingStart="4dp"
+                android:paddingBottom="6dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRequestBattery"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Request Battery Optimization Exemption"
+                        app:backgroundTint="@color/brand_primary"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRequestOverlay"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Request Draw Over Other Apps"
+                        app:backgroundTint="@color/brand_primary"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRequestExactAlarm"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Request Exact Alarm Scheduling"
+                        app:backgroundTint="@color/brand_primary"
+                        app:cornerRadius="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRequestNotificationListener"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Request Notification Listener Access"
+                        app:backgroundTint="@color/brand_primary"
+                        app:cornerRadius="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- LOG OUTPUT -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:paddingStart="4dp" android:paddingBottom="6dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="OUTPUT LOG"
+                    android:textSize="11sp" android:textColor="@color/text_secondary"
+                    android:letterSpacing="0.12" android:textStyle="bold" />
+                <Button android:id="@+id/btnClearLog"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Clear" android:textSize="12sp" android:textColor="@color/text_secondary"
+                    android:minHeight="0dp" android:paddingTop="0dp" android:paddingBottom="0dp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/log_bg">
+                <ScrollView android:id="@+id/scrollLog"
+                    android:layout_width="match_parent" android:layout_height="300dp"
+                    android:fillViewport="true">
+                    <TextView android:id="@+id/tvOutput"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:padding="14dp" android:textSize="12sp"
+                        android:lineSpacingMultiplier="1.4" android:fontFamily="monospace"
+                        android:textColor="@color/log_text"
+                        android:text="Tap any button above to see output here.\n\nPlayGuardian will show:\n• Policy audit results with severity\n• Permission grant status\n• Request outcomes\n• Manifest scan results" />
+                </ScrollView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
