@@ -1,86 +1,86 @@
 [
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/drawable_ic_notification.xml.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/drawable/ic_notification.xml"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\drawable_ic_notification.xml.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\drawable\\ic_notification.xml"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\drawable_ic_audit.xml.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\drawable\\ic_audit.xml"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/drawable_ic_audit.xml.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/drawable/ic_audit.xml"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/drawable_ic_overlay.xml.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/drawable/ic_overlay.xml"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\drawable_ic_battery.xml.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\drawable\\ic_battery.xml"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/drawable_ic_battery.xml.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/drawable/ic_battery.xml"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/drawable_ic_scan.xml.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/drawable/ic_scan.xml"
+        "merged": "com.playguardian.sample.sample-app-debug-70:/layout_activity_main.xml.flat",
+        "source": "com.playguardian.sample.sample-app-main-72:/layout/activity_main.xml"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/drawable_ic_alarm.xml.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/drawable/ic_alarm.xml"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\drawable_ic_alarm.xml.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\drawable\\ic_alarm.xml"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/layout_activity_main.xml.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\drawable_ic_overlay.xml.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\drawable\\ic_overlay.xml"
     },
     {
-        "merged": "com.playguardian.sample.sample-app-debug-34:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.playguardian.sample.sample-app-main-36:/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-debug-70:\\drawable_ic_scan.xml.flat",
+        "source": "C:\\Users\\Ninesol\\.gradle\\daemon\\8.7\\com.playguardian.sample.sample-app-main-72:\\drawable\\ic_scan.xml"
     }
 ]

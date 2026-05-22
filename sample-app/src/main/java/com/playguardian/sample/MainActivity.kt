@@ -18,11 +18,11 @@ import com.playguardian.core.PlayGuardian
 import com.playguardian.oem.AppCategory
 import com.playguardian.oem.PermissionConfig
 import com.playguardian.oem.SpecialAccess
-import com.playguardian.sample.databinding.ActivityMainBinding
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 import androidx.core.graphics.toColorInt
+import com.playguardian.sample.databinding.ActivityMainBinding
 
 /**
  * Main sample activity demonstrating every PlayGuardian API.
