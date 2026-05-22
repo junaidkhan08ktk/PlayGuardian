@@ -14,14 +14,14 @@
 14        and can justify under Google Play Developer Policy.
 15    -->
 16    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
-16-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:9:5-95
-16-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:9:22-92
+16-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:9:5-95
+16-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:9:22-92
 17    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-17-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:10:5-78
-17-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:10:22-75
+17-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:10:5-78
+17-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:10:22-75
 18    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-18-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:11:5-79
-18-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:11:22-76
+18-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:11:5-79
+18-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:11:22-76
 19
 20    <permission
 20-->[androidx.core:core:1.13.1] C:\Users\Ninesol\.gradle\caches\transforms-4\80e3ac4a69b90b72499e908d2039e72b\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
@@ -35,41 +35,41 @@
 24-->[androidx.core:core:1.13.1] C:\Users\Ninesol\.gradle\caches\transforms-4\80e3ac4a69b90b72499e908d2039e72b\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 25
 26    <application
-26-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:13:5-31:19
+26-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:13:5-31:19
 27        android:allowBackup="true"
-27-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:14:9-35
+27-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:14:9-35
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 28-->[androidx.core:core:1.13.1] C:\Users\Ninesol\.gradle\caches\transforms-4\80e3ac4a69b90b72499e908d2039e72b\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 29        android:debuggable="true"
 30        android:extractNativeLibs="false"
 31        android:icon="@mipmap/ic_launcher"
-31-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:15:9-43
+31-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:15:9-43
 32        android:label="@string/app_name"
-32-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:16:9-41
+32-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:16:9-41
 33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:17:9-54
+33-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:17:9-54
 34        android:supportsRtl="true"
-34-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:18:9-35
+34-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:18:9-35
 35        android:testOnly="true"
 36        android:theme="@style/Theme.PlayGuardian" >
-36-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:19:9-50
+36-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:19:9-50
 37        <activity
-37-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:21:9-29:20
+37-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:21:9-29:20
 38            android:name="com.playguardian.sample.MainActivity"
-38-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:22:13-41
+38-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:22:13-41
 39            android:exported="true"
-39-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:23:13-36
+39-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:23:13-36
 40            android:windowSoftInputMode="adjustResize" >
-40-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:24:13-55
+40-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:24:13-55
 41            <intent-filter>
-41-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:25:13-28:29
+41-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:25:13-28:29
 42                <action android:name="android.intent.action.MAIN" />
-42-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:26:17-69
-42-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:26:25-66
+42-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:26:17-69
+42-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:26:25-66
 43
 44                <category android:name="android.intent.category.LAUNCHER" />
-44-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:27:17-77
-44-->D:\PlayGuardian\PlayGuardianFull\sample-app\src\main\AndroidManifest.xml:27:27-74
+44-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:27:17-77
+44-->D:\PlayGuardian\sample-app\src\main\AndroidManifest.xml:27:27-74
 45            </intent-filter>
 46        </activity>
 47

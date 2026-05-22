@@ -3,6 +3,13 @@ plugins {
     alias(libs.plugins.kotlin.android)
 }
 
+apply(plugin = "maven-publish")
+
+tasks.register("sourcesJar", Jar::class) {
+    archiveClassifier.set("sources")
+    from(android.sourceSets.getByName("main").java.srcDirs)
+}
+
 android {
     namespace = "com.playguardian.audit"
     compileSdk = 35
@@ -31,6 +38,16 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+}
+
+afterEvaluate {
+    val publishingExt = project.extensions.getByType(PublishingExtension::class.java)
+    val pub = publishingExt.publications.create("release", MavenPublication::class.java)
+    pub.groupId = project.group.toString()
+    pub.artifactId = project.name
+    pub.version = project.version.toString()
+    pub.from(components["release"])
+    pub.artifact(tasks.named("sourcesJar").get())
 }
 
 dependencies {
