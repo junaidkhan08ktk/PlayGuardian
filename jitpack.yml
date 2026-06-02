@@ -1,5 +1,0 @@
-jdk:
-  - openjdk17
-
-install:
-  - ./gradlew :playguardian-oem:publishToMavenLocal :playguardian-audit:publishToMavenLocal :playguardian-core:publishToMavenLocal -x test -x lint
