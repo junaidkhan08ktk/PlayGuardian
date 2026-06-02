@@ -6,11 +6,6 @@ plugins {
 // Apply maven-publish for module-level publications (JitPack / mavenLocal)
 apply(plugin = "maven-publish")
 
-// Create a sources JAR so consumers can see sources in IDEs
-tasks.register("sourcesJar", org.gradle.api.tasks.bundling.Jar::class) {
-    archiveClassifier.set("sources")
-    from(android.sourceSets.getByName("main").java.srcDirs)
-}
 
 android {
     namespace = "com.playguardian.core"
@@ -40,6 +35,12 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
 }
 
 afterEvaluate {
@@ -50,7 +51,6 @@ afterEvaluate {
     pub.artifactId = project.name
     pub.version = project.version.toString()
     pub.from(components["release"])
-    pub.artifact(tasks.named("sourcesJar").get())
 }
 
 dependencies {

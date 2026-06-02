@@ -5,10 +5,6 @@ plugins {
 
 apply(plugin = "maven-publish")
 
-tasks.register("sourcesJar", Jar::class) {
-    archiveClassifier.set("sources")
-    from(android.sourceSets.getByName("main").java.srcDirs)
-}
 
 android {
     namespace = "com.playguardian.oem"
@@ -38,6 +34,12 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
 }
 
 afterEvaluate {
@@ -47,7 +49,6 @@ afterEvaluate {
     pub.artifactId = project.name
     pub.version = project.version.toString()
     pub.from(components["release"])
-    pub.artifact(tasks.named("sourcesJar").get())
 }
 
 dependencies {
