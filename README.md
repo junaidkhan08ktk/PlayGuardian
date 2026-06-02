@@ -64,27 +64,41 @@ PlayGuardian includes safe, defensive intent fallbacks for:
 
 ## Installation
 
-> Publishing to Maven Central is in progress. Until then, clone and include as a local module.
+PlayGuardian is available via [JitPack](https://jitpack.io).
 
-**Step 1.** Clone the repository:
-```bash
-git clone https://github.com/your-org/PlayGuardian.git
-```
+### Step 1. Add the JitPack Repository
+Add the JitPack repository to your root `settings.gradle.kts` (inside the `dependencyResolutionManagement` block):
 
-**Step 2.** Add to your root `settings.gradle.kts`:
 ```kotlin
-include(":playguardian-core")
-include(":playguardian-oem")
-include(":playguardian-audit")
-project(":playguardian-core").projectDir = File("../PlayGuardian/playguardian-core")
-project(":playguardian-oem").projectDir = File("../PlayGuardian/playguardian-oem")
-project(":playguardian-audit").projectDir = File("../PlayGuardian/playguardian-audit")
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
 ```
 
-**Step 3.** Add the core dependency to your app's `build.gradle.kts`:
+### Step 2. Add the Dependency
+Add the PlayGuardian dependency to your app's `build.gradle.kts`:
+
 ```kotlin
 dependencies {
-    implementation(project(":playguardian-core"))
+    // Core library (Recommended - includes OEM and Audit modules transitively)
+    implementation("com.github.junaidkhan08ktk.PlayGuardian:playguardian-core:v1.0.1")
+}
+```
+
+Because of PlayGuardian's clean multi-module architecture, you can also import only the modules you need if you want to keep your dependency footprint minimal:
+
+```kotlin
+dependencies {
+    // Only the OEM Settings Launcher (zero other dependencies)
+    implementation("com.github.junaidkhan08ktk.PlayGuardian:playguardian-oem:v1.0.1")
+
+    // Only the Policy Heuristics Auditor (includes playguardian-oem transitively)
+    implementation("com.github.junaidkhan08ktk.PlayGuardian:playguardian-audit:v1.0.1")
 }
 ```
 
