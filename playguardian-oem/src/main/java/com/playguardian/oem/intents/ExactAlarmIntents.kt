@@ -2,9 +2,9 @@ package com.playguardian.oem.intents
 
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Build
 import android.provider.Settings
+import androidx.core.net.toUri
 
 /**
  * Provides a prioritised list of [Intent]s to open the exact-alarm scheduling permission
@@ -32,7 +32,7 @@ internal object ExactAlarmIntents {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             safeIntent {
                 Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM).apply {
-                    data = Uri.parse("package:$packageName")
+                    data = "package:$packageName".toUri()
                     addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 }
             }?.let { intents.add(it) }
@@ -41,7 +41,7 @@ internal object ExactAlarmIntents {
         // 2. App details settings fallback (available on all supported API levels)
         safeIntent {
             Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
-                data = Uri.parse("package:$packageName")
+                data = "package:$packageName".toUri()
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
         }?.let { intents.add(it) }
@@ -59,7 +59,7 @@ internal object ExactAlarmIntents {
     private inline fun safeIntent(block: () -> Intent): Intent? {
         return try {
             block()
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             null
         }
     }

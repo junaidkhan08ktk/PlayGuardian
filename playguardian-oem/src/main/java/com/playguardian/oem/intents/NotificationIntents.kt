@@ -2,8 +2,8 @@ package com.playguardian.oem.intents
 
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.provider.Settings
+import androidx.core.net.toUri
 
 /**
  * Provides a prioritised list of [Intent]s to open the Notification Listener access settings.
@@ -35,7 +35,7 @@ internal object NotificationIntents {
         // 2. App details settings fallback
         safeIntent {
             Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
-                data = Uri.parse("package:$packageName")
+                data = "package:$packageName".toUri()
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
         }?.let { intents.add(it) }
@@ -53,7 +53,7 @@ internal object NotificationIntents {
     private inline fun safeIntent(block: () -> Intent): Intent? {
         return try {
             block()
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             null
         }
     }

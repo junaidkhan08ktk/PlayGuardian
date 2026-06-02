@@ -111,7 +111,7 @@ object PermissionVerifier {
             } else {
                 AccessState.Denied
             }
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             AccessState.Denied
         }
     }

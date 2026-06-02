@@ -38,7 +38,7 @@ class DashboardViewModel @Inject constructor(
     fun auditAccess(access: SpecialAccess, reason: String, category: AppCategory) {
         addLog("Auditing ${access.name}...", LogLevel.INFO)
         val report = repository.audit(access, reason, category)
-        addLog("Audit complete for ${access.name}. Severity: ${report.severity}", 
+        addLog("Audit complete for ${access.name}. Severity: ${report.severity}",
             if (report.warnings.isEmpty()) LogLevel.SUCCESS else LogLevel.WARNING)
         report.warnings.forEach { addLog("  Warning: $it", LogLevel.WARNING) }
         report.recommendations.forEach { addLog("  Info: $it", LogLevel.INFO) }
@@ -99,8 +99,8 @@ class DashboardViewModel @Inject constructor(
     }
 
     private fun addLog(message: String, level: LogLevel = LogLevel.INFO) {
-        _uiState.update { 
-            it.copy(logs = it.logs + LogEntry(message, level)) 
+        _uiState.update {
+            it.copy(logs = it.logs + LogEntry(message, level))
         }
     }
 }

@@ -1,6 +1,5 @@
 package com.playguardian.sample
 
-import android.R.attr.text
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
@@ -9,6 +8,7 @@ import android.text.Spannable
 import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
 import android.graphics.Typeface
+import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.playguardian.audit.model.PolicyReport
@@ -247,10 +247,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun logLine(text: String, level: LogLevel) {
         val color = when (level) {
-            LogLevel.OK -> Color.parseColor("#4ADE80")
-            LogLevel.WARN -> Color.parseColor("#FCD34D")
-            LogLevel.ERROR -> Color.parseColor("#F87171")
-            LogLevel.INFO -> Color.parseColor("#93C5FD")
+            LogLevel.OK -> "#4ADE80".toColorInt()
+            LogLevel.WARN -> "#FCD34D".toColorInt()
+            LogLevel.ERROR -> "#F87171".toColorInt()
+            LogLevel.INFO -> "#93C5FD".toColorInt()
         }
         val ssb = SpannableStringBuilder()
         ssb.append(text, ForegroundColorSpan(color), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
@@ -264,9 +264,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun logReport(report: PolicyReport) {
         val severityColor = when (report.severity) {
-            Severity.LOW -> Color.parseColor("#4ADE80")
-            Severity.MEDIUM -> Color.parseColor("#FCD34D")
-            Severity.HIGH -> Color.parseColor("#F87171")
+            Severity.LOW -> "#4ADE80".toColorInt()
+            Severity.MEDIUM -> "#FCD34D".toColorInt()
+            Severity.HIGH -> "#F87171".toColorInt()
         }
         val ssb = SpannableStringBuilder()
         ssb.append("Severity: ")
@@ -298,7 +298,7 @@ class MainActivity : AppCompatActivity() {
         binding.tvOutput.text = builder
         // Auto-scroll to bottom
         binding.scrollLog.post {
-            binding.scrollLog.fullScroll(android.view.View.FOCUS_DOWN)
+            binding.scrollLog.fullScroll(View.FOCUS_DOWN)
         }
     }
 

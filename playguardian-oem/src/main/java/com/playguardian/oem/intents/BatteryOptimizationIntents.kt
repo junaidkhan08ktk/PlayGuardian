@@ -2,10 +2,10 @@ package com.playguardian.oem.intents
 
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Build
 import android.provider.Settings
 import com.playguardian.oem.Manufacturer
+import androidx.core.net.toUri
 
 /**
  * Provides a prioritised list of [Intent]s that can open battery optimisation / power management
@@ -37,7 +37,7 @@ internal object BatteryOptimizationIntents {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             safeIntent {
                 Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS).apply {
-                    data = Uri.parse("package:$packageName")
+                    data = "package:$packageName".toUri()
                     addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 }
             }?.let { intents.add(it) }
@@ -103,7 +103,7 @@ internal object BatteryOptimizationIntents {
         // 4. App details settings (always resolvable; user can adjust battery from here too)
         safeIntent {
             Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
-                data = Uri.parse("package:$packageName")
+                data = "package:$packageName".toUri()
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
         }?.let { intents.add(it) }
@@ -128,7 +128,7 @@ internal object BatteryOptimizationIntents {
     private inline fun safeIntent(block: () -> Intent): Intent? {
         return try {
             block()
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             null
         }
     }

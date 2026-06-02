@@ -34,7 +34,7 @@ object ManifestAuditor {
                 .getPackageInfo(packageName, flags)
                 .requestedPermissions
                 ?: emptyArray()
-        } catch (e: PackageManager.NameNotFoundException) {
+        } catch (_: PackageManager.NameNotFoundException) {
             emptyArray()
         }
 
